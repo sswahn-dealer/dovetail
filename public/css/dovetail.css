@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#search-box:focus {
+    width: 350px;
+}
+
+.icon-btn {
+    width: 75px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.white-txt {
+    color: #ffffff;
+}
+
+.white-bg {
+    background: #ffffff;
+}
+
+.faded-bg {
+    background: #eeeeee;
+}
+
+.top-nav {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+.center-element {
+    margin: 0 auto;
+}
+
+.top-down-centering {
+    margin-top: 25%;
+}
+
+.component-small {
+    max-width: 300px;
+}
+
+.component-half {
+    max-width: 50%;
+}
+
+.component-large {
+    max-width: 75%;
+}
+
+.component .panel-heading {
+    height: 50px;
+}
+
+.component .panel-heading h1 {
+    margin: 0px;
+}
+
+.pulled-btn {
+    margin-bottom: 15px;
+}
+
+

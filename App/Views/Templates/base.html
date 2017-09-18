@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+{% block title %}
+            Dovetail
+{% endblock %}
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#16283a">
+        <meta name="description" content="Dovetail Client Services Business Intelligence Dashboard">
+        
+        <link href="/assets/font-awesome/css/font-awesome.css" rel="stylsheet">
+        <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        
+        <link href="/css/dovetail.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href=""> <!-- favicon -->
+        
+        <script src="/assets/jquery/jquery-3.2.1.min.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+        
+{% block headscripts %}        
+{% endblock %}
+    </head>
+    <body class="faded-bg">
+        {% block topnav %}
+        <nav class="top-nav container navbar navbar-light">
+            <div class="navbar-nav">
+                <a href="/dashboard" class="btn btn-default btn-sm nav-item nav-link">
+                    <i class="glyphicon glyphicon-home"></i>
+                    Home
+                </a>
+                <a href="/contact" class="btn btn-default btn-sm nav-item nav-link">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                    Contact
+                </a>
+                
+                {% block toplinks %}
+                {% endblock %}
+            </div>
+            <form class="form-inline has-feedback pull-right" role="search">
+                <input type="text" class="form-control input-sm" id="search-box" placeholder="Search">
+                <i class="text-muted glyphicon glyphicon-search form-control-feedback" id="search-icon"></i>
+            </form>
+        </nav>
+        {% endblock %}
+
+        {% block subheader %}
+        {% endblock %}
+        <main class="container" id='root'>
+
+            <!--js components -->
+        {% block main %}
+        {% endblock %}
+        </main>
+        <footer class="container">
+        {% block footer %}
+        {% endblock %}
+        <p id="copyright">&copy; Dealer.com</p>
+        </footer>
+        <script src="/js/Core.js"></script>
+        {% block scripts %}
+        {% endblock %}
+    </body>
+</html>

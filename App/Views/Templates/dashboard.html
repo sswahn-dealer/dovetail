@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+        Dovetail . Dashboard
+{% endblock %}
+
+
+{% block toplinks %}
+    <button href="#" class="btn btn-default btn-sm nav-item nav-link"
+        data-toggle="modal" data-target="#components-modal">
+        <i class="glyphicon glyphicon-cog"></i>
+        Components
+    </button>
+{% endblock %}
+
+
+{% block subheader %}
+    <div id="subheader"></div>
+    
+{% endblock %}
+
+{% block scripts %}
+    <script src="/js/components/base/Article.js"></script>
+    <script src="/js/components/base/Header.js"></script>
+    <script src="/js/components/base/Body.js"></script>
+    <script src="/js/components/base/Footer.js"></script>
+    <script src="/js/components/Dashboard.js"></script>
+
+{% endblock %}
